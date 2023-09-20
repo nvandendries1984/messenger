@@ -17,15 +17,20 @@
         font-weight: bold;
         color: #007bff; /* Blauwe kleur voor de gebruikersnaam */
     }
+
+    .chat-avatar {
+        max-width: 32px;
+        border-radius: 50px;
+    }
 </style>
     
 <div class="container-fluid chat-container">
-    <h3><img src="{{ user.avatar.path }}" alt="{{ user.name }}" style="max-width: 32px;border-radius: 50px;"> Welcome {{ user.name }}</h3>
+    <h3><img src="{{ user.avatar.path }}" alt="{{ user.name }}" class="chat-avatar"> Welcome {{ user.name }}</h3>
     <hr>
     <div id="chat-messages"></div>
     <div class="input-group">
         <input type="text" id="message-input" class="form-control" placeholder="Type your message here">
-        <button id="send-button" class="btn btn-primary">Send it...</button>
+        <button id="send-button" class="btn btn-info">Send it...</button>
     </div>
     <p class="text-muted"><i style="font-size: x-small;">Please note: Messages are not saved.</i></p>
 </div>
