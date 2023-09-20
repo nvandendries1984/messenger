@@ -12,8 +12,8 @@ class Chat extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'Chat Component',
-            'description' => 'No description provided yet...'
+            'name' => 'Chat',
+            'description' => 'A simple Chat function'
         ];
     }
 
