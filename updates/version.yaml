@@ -7,3 +7,5 @@
     - 'Translate to english'
 1.0.4:
     - 'Added instant Chat'
+1.0.5:
+    - 'chat messages are now stored in the browser cache'
